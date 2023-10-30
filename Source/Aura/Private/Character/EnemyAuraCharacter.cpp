@@ -31,3 +31,13 @@ void AEnemyAuraCharacter::UnhighlightActor()
 	GetMesh()->SetRenderCustomDepth(false);
 	Weapon->SetRenderCustomDepth(false);
 }
+
+void AEnemyAuraCharacter::BeginPlay()
+{
+	AbilitySystemComponent->InitAbilityActorInfo(this, this);
+}
+
+void FStat_Stat_ActorBeginPlay()
+{
+	
+}
